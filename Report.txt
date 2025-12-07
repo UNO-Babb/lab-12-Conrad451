@@ -1,44 +1,47 @@
-Name:
+Name: Connor Pell
 
-Number of elements:
+Number of elements: 10000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.78
+Reversed: 5.41
+Random: 4.32
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00070
+Reversed: 5.74
+Random: 4.44
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 1.87
+Reversed: 1.998
+Random: 1.887
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.002
+Reversed: 4.03
+Random: 1.93
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.01853
+Reversed: 0.018
+Random: .0223
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+    The worst case scenario was bubble sort on the reversed data for a time of 5.41 seconds. Since the data is as wrong as it can be, there is the maximum number of swaps happening.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
-
+    Bubble sort does many comparisons and many swaps. Early exit just stops as soon as one complete pass yields no swaps. Selection sort compares everything first and then swaps once at the end. Insertion sort works with one element at a time and inserts it into it's proper place among already sorted numbers.
 
 3) Why was merge sort so much more efficient?
+    Merge sort splits the data into one element and then sorts them into merged lists that result in a merged data set. As not every element is compared to every other element it is faster.
 
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
+As merge sort is best for large datasets, and insertion sort is best for small datasets, you get the best of both. 
 
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+Merge sort requires more memory in runtime as it splits elements. There is also overhead on every merge, no matter the size of the list. This makes it inefficient for small lists.
